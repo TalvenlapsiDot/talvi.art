@@ -1,6 +1,6 @@
 .container {
   padding: 0 2rem;
-  background-image: url('../images/lowpoly.png');
+  background-image: linear-gradient(rgba(255, 234, 234, 0.171), rgba(165, 142, 142, 0.555)), url('../images/lowpoly.png');
 }
 
 .main {
@@ -49,14 +49,14 @@
 .title,
 .description {
   text-align: center;
-  color:#571a29;
+  color:#fac0ce;
 }
 
 .description {
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
-  background-color: rgba(211, 155, 164, 0.384);
+  background-image: linear-gradient(rgba(43, 15, 40, 0.808), rgba(34, 19, 32, 0.712)), url('../images/pattern.png');
   border-radius: 20px;
   min-height: 300px;
   min-width: 300px;
