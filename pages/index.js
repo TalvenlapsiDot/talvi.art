@@ -12,15 +12,24 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-       <p className={styles.description}>
-          <h1> Welcome to for now empty page! </h1>
-         This will be a portfolio page eventually..
+       <p className={styles.box}>
+          <h1> Welcome to almost non-empty page! </h1>
+         <p> Test text goes here, something something Talvi does art or stuff like that.
+          Test test test.
+         </p>
+         <p> Maybe here some stuff idk. </p>
+         <p> I think this is getting dumb.</p>
+        <ul className={styles.ul}>★ Working on: ★</ul>
+        {/* Why doesn't this apply the style properly? */}
+        <li> Name </li>
+        <ul className={styles.ul}> ★ Waiting List: ★
+        <li> Name</li>
+        <li> Name</li>
+        <li> Name</li>
+        <li> Name</li>
+        </ul>
         </p>
       </main>
-
-      <footer className={styles.footer}>
-        Talvi Trying Her Best I Swear
-      </footer>
     </div>
   )
 }

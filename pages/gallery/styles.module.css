@@ -1,0 +1,30 @@
+
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.box {
+    text-align: center;
+    color:#fac0ce;
+  }
+  
+  .box {
+    margin: 4rem 0;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    background-image: linear-gradient(189deg, rgba(43, 15, 40, 0.801) 0%, rgba(78, 31, 55, 0.801) 100%, rgba(46, 25, 43, 0.507) 100%), url('./pattern.png');
+    border-radius: 20px;
+    min-height: 300px;
+    min-width: 300px;
+    text-align: center;
+    padding: 10px;
+  }

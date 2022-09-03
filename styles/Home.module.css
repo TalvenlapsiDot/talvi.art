@@ -1,58 +1,31 @@
 .container {
   padding: 0 2rem;
-  background-image: linear-gradient(18deg, rgba(164, 213, 204, 0.250) 0%, rgba(241,241,255, 0.250) 51%, rgba(255,203,218, 0.250) 100%), url('../images/lowpoly.png');
 }
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  padding: 10px;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  max-width: 700px;
 }
 
 .footer {
   display: flex;
   flex: 1;
-  padding: 2rem 0;
+  padding: 10px;
   border-top: 1px solid #571a29;
   justify-content: center;
   align-items: center;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title {
-  color: #571a29;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
+.box {
   text-align: center;
   color:#fac0ce;
 }
 
-.description {
+.box {
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
@@ -68,4 +41,33 @@
 .footer {
   border-color: rgb(155, 57, 90);
   color:#571a29;
+}
+
+.nav a{
+  display: inline-block;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.nav a:hover{
+  background-color: rgba(34, 12, 32, 0.863);
+}
+
+.nav {
+  position: sticky;
+  top: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: rgba(34, 12, 32, 0.863);
+  border-radius: 50px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
 }
