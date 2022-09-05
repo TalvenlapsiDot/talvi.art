@@ -12,6 +12,7 @@ export default function Tos() {
          <h1> Terms of Service </h1>
              Test text and shit.
              A long boi text here
+             Hello
            </p>
            </main>
       </div>
