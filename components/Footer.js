@@ -1,12 +1,11 @@
 import React from 'react'
 import styles from '../styles/Home.module.css'
-import Link from 'next/link'
 import { SocialIcon } from 'react-social-icons';
 
 const Footer = () => {
     return (
         <>
-        <title className={styles.footer}> Talvi Art Elsewhere</title>
+        <title className={styles.footer}> Social Media Links </title>
         <p className={styles.footer2}>
         <SocialIcon style={{ height: 35, width: 35 }} url="https://twitter.com/talvenlapsiDot" />
         <SocialIcon style={{ height: 35, width: 35 }} url="https://www.facebook.com/J.Kukka" />
