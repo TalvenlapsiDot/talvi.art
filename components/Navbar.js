@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import Link from 'next/link'
  
 const Navbar = () => {
+    
     return (
         <nav className={styles.nav}>
                 <Link href='/'><a>Home</a></Link>

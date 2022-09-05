@@ -14,14 +14,17 @@
 
 .nav {
   position: sticky;
-  top: 40px;
+  top: 0px;
   align-items: center;
   justify-content: center;
   display: flex;
-  background-color: rgba(34, 12, 32, 0.925);
-  border-radius: 50px;
-  max-width: 1000px;
-  margin: 20px auto;
+  background-color: #73414c;
+  border-radius: 10px;
+  max-width: 700px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
   z-index: 10;
 }
 
@@ -31,19 +34,20 @@
   margin: 10px;
   border-radius: 10px;
   font-size: large;
+  color: #f5c0d2;
 }
 
 .nav a:hover{
-  background-color: rgba(34, 12, 32, 0.884);
+  background-color: rgba(139, 64, 83, 0.801);
 }
 
 .box {
   text-align: center;
-  color:#fac0ce;
+  color:#f5c0d2;
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
-  background-image: linear-gradient(189deg, rgba(43, 15, 40, 0.801) 0%, rgba(78, 31, 55, 0.801) 100%, rgba(46, 25, 43, 0.507) 100%), url('../public/images/pattern.png');
+  background-image: linear-gradient(189deg, rgba(82, 32, 45, 0.801) 0%, rgba(97, 43, 55, 0.801) 100%, rgba(71, 40, 52, 0.507) 100%), url('../public/images/pattern.png');
   border-radius: 20px;
   min-height: 300px;
   min-width: 300px;
@@ -60,28 +64,12 @@
 }
 
 .footer {
-  color:#571a29;
-  text-align: center;
   position: relative;
   top: 1px;
   margin: 0 auto;
   display: flex;
   flex: 1;
-  padding: 10px;
-  border-top: 1px solid #571a29;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer2{
-  color:#571a29;
-  text-align: center;
-  position: relative;
-  top: 1px;
-  margin: 0 auto;
-  display: flex;
-  flex: 1;
-  padding: 10px;
+  border-top: 1px solid #571a2986;
   justify-content: center;
   align-items: center;
 }
