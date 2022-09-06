@@ -1,17 +1,17 @@
-import styles from "./styles.module.css";
 import Head from 'next/head';
+import Page from '../../components/page';
 
 export default function Tos() {
     return (
-      <div className={styles.container}>
+      <Page>
         <Head>
-            <title> T.O.S</title>
+            <title>Terms of Service</title>
         </Head>
-      <main className={styles.main}>
-         <p className={styles.box}>
+
+        <section>
         <h2> <ins>Terms of Service </ins></h2>
           <hr color="#8b4053"></hr>
-          <b><ins>I will not draw</ins></b>
+          <p> <b><ins>I will not draw</ins></b>
         <br></br>
          ❥ Mechanoid creatures
         <br></br>
@@ -57,9 +57,8 @@ export default function Tos() {
         <br></br>
          ❥ Comissioner are not allowed to use artwork for commercial use or promotion/profit.
         <br></br>
-         ❥ Comissioner does not have right to sell any comissioned art for NFT.
-           </p>
-        </main>
-      </div>
+         ❥ Comissioner does not have right to sell any comissioned art for NFT.</p>
+        </section>
+     </Page>
     )
-}
+    }

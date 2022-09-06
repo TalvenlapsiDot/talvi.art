@@ -1,19 +1,18 @@
-import styles from "./styles.module.css";
 import Head from 'next/head';
+import Page from '../../components/page';
 
 export default function Prices() {
     return (
-      <div className={styles.container}>
+      <Page>
         <Head>
             <title>Prices</title>
         </Head>
-        <main className={styles.main}>
-         <p className={styles.box}>
-         <h1> Pricelist yooo</h1>
-             Test text and shit.
-             Much of prices and some pictures here
-           </p>
-           </main>
-      </div>
+
+        <section>
+          <h1> Pricelist yooo</h1>
+          <p>Test text and shit.</p>
+          <p>Much of prices and some pictures here</p>
+        </section>
+    </Page>
     )
 }

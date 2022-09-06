@@ -1,19 +1,18 @@
-import styles from "./styles.module.css";
 import Head from 'next/head';
+import Page from '../../components/page';
 
 export default function Gallery() {
     return (
-      <div className={styles.container}>
+      <Page>
         <Head>
             <title> Gallery</title>
         </Head>
-        <main className={styles.main}>
-         <p className={styles.box}>
-         <h1> This is the gallery </h1>
-             Test text and shit.
-             Will be pictures one day.
-           </p>
-           </main>
-      </div>
+
+        <section>
+          <h1> This is the gallery </h1>
+          <p>Test text and shit.</p>
+          <p>Will be pictures one day.</p>
+        </section>
+    </Page>
     )
 }
