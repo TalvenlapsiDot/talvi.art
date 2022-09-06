@@ -2,7 +2,7 @@ import React from 'react'
 import styles from '../styles/Home.module.css'
 import { SocialIcon } from 'react-social-icons';
 
-const Footer = () => {
+export default function Footer() {
     return (
         <div className={styles.footer}>
         <p>
@@ -16,5 +16,3 @@ const Footer = () => {
       </div>
     );
 }
-
-export default Footer

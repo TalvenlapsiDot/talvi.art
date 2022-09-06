@@ -25,7 +25,7 @@
 }
 
 .nav a:hover{
-  background-color: #8b4053cc;
+  background-color: #fc85a260;
 }
 
 .ul {
@@ -41,7 +41,7 @@
 
 .footer {
   position: relative;
-  top: 20px;
+  top: 1px;
   margin: 0 auto;
   display: flex;
   flex: 1;

@@ -3,23 +3,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from 'next/router';
 import styles from '../styles/Home.module.css';
 
-const Transition = ({ children }) => {
-    const { asPath } = useRouter();
+export default function Transition({ children }) {
+  const { asPath } = useRouter();
     return (
-    <div className={styles.effect1}>
-        <AnimatePresence
-        initial={false}
-        exitBeforeEnter>
-            <motion.div
-            key={asPath}
-            variants={variants}
-            animate="in"
-            initial="out"
-            exit="out">
+      <div className={styles.effect1}>
+        <AnimatePresence initial={false} exitBeforeEnter>
+            <motion.div key={asPath} variants={variants} animate="in" initial="out" exit="out">
                 {children}
             </motion.div>
         </AnimatePresence>
-    </div>
+      </div>
     )
   };
 
@@ -33,6 +26,7 @@ const Transition = ({ children }) => {
         delay: 0.2
       }
     },
+
     out: {
       opacity: 0,
       scale: 1,
@@ -42,6 +36,3 @@ const Transition = ({ children }) => {
       }
     }
   };
-
-
-  export default Transition;
