@@ -29,7 +29,7 @@ export default function Tos() {
         <br></br>
          ❥ USD or Euro only.
         <br></br>
-         ❥ I take payment after I'm finished, before I send the final files to the customer.
+         ❥ I take payment after I&apos;m finished, before I send the final files to the customer.
         <br></br>
          ❥ I use paypal invoices to send to the customer. After the invoice is paid, I will send the full size and quality images to the customer. You do not need Paypal account to pay the invoice!
         <br></br>
@@ -42,7 +42,7 @@ export default function Tos() {
         <br></br>
          ❥ Completed comissions cannot be edited by another artist, with the exclusion of the comissioner themselves.
         <br></br>
-         ❥ WIP's will be provided during the working phase; Usually at sketching, then after placing colors, and at the end before sending in the invoice and placing final edits.
+         ❥ WIP&apos;s will be provided during the working phase; Usually at sketching, then after placing colors, and at the end before sending in the invoice and placing final edits.
         <br></br>
          ❥ If you need major edits at the very end of the image, that requires reworking more than half of the image, an additional payment can be requested. Customer can refuse this payment with understanding that they will not get the edits made.
         <br></br><br></br>
