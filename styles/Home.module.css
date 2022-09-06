@@ -26,6 +26,7 @@
   margin-right: auto;
   margin-bottom: auto;
   z-index: 10;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 .nav a{
@@ -38,11 +39,10 @@
 }
 
 .nav a:hover{
-  background-color: rgba(139, 64, 83, 0.801);
+  background-color: #8b4053cc;
 }
 
 .box {
-  text-align: center;
   color:#f5c0d2;
   margin: 4rem 0;
   line-height: 1.5;
@@ -51,16 +51,22 @@
   border-radius: 20px;
   min-height: 300px;
   min-width: 300px;
-  text-align: center;
-  padding: 10px;
+  text-align: left;
+  padding: 30px;
   position: relative;
   top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 .ul {
   list-style-type: none; /* Remove bullets */
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margins */
+  text-align: center;
+}
+
+.effect1 {
+  overflow: hidden;
 }
 
 .footer {

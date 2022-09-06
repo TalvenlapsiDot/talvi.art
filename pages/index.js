@@ -14,24 +14,23 @@ export default function Home() {
       <main className={styles.main}>
        <p className={styles.box}>
           <h2> Welcome to almost non-empty page! </h2>
-         <p> Test text goes here, something something Talvi does art or stuff like that.
-          Test test test.
-          <br></br> Maybe here some stuff idk.
-          <br></br>I think this is getting dumb.</p>
-        <ul className={styles.ul}> ★ Working on: ★
-        <li> Name </li>
+          <p>25-something Finnish Artist sometimes trying her best and sometimes getting art done. At best times, even almost decent art!
+            <br></br>
+          Page contains both NSFW and SFW examples.
+            <br></br><br></br>
+          Contacts through discord at <strong>Talvi#4702</strong> or to e-mail found at the bottom of the page.</p>
+          <br></br>
+          <p className={styles.ul}>
+          <b><ins>★ Comission Status: ★</ins></b>
+          <br></br>
+          Status here. Could make it fancy with some button or smth
+          </p>
+          <br></br>
+        <ul className={styles.ul}> <b><ins>★ Working on: ★</ins></b>
+        <li> Kinda want these lists into fancier form too..</li>
         </ul>
-        <ul className={styles.ul}> ★ Waiting List: ★
-        <li> Name</li>
-        <li> Name</li>
-        <li> Name</li>
-        <li> Name</li>
-        <li> Name</li>
-        <li> Name</li>
-        <li> Name</li>
-        <li> Name</li>
-        <li> Name</li>
-        <li> Name</li>
+        <ul className={styles.ul}> <b><ins>★ Waiting List: ★</ins></b>
+        <li> Especially the waiting list one</li>
         <li> Name</li>
         <li> Name</li>
         </ul>
