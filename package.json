@@ -10,10 +10,18 @@
   },
   "dependencies": {
     "framer-motion": "^7.2.1",
+    "lightgallery": "^2.6.0",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-social-icons": "^5.14.0"
+    "react-images": "^1.2.0-beta.7",
+    "react-modal": "^3.15.1",
+    "react-photo-album": "^1.16.1",
+    "react-photo-gallery": "^8.0.0",
+    "react-photo-gallery-next": "^8.0.1",
+    "react-responsive-carousel": "^3.2.23",
+    "react-social-icons": "^5.14.0",
+    "swiper": "^8.3.2"
   },
   "devDependencies": {
     "eslint": "8.23.0",

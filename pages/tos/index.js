@@ -1,7 +1,14 @@
 import Head from 'next/head';
 import Page from '../../components/Page';
+import { useState } from 'react';
 
 export default function Tos() {
+  const [visible, setVisible] = useState(false);
+
+  const handleMoreClick = () => {
+    setVisible(!visible);
+  };
+
     return (
       <Page>
         <Head>
@@ -11,18 +18,7 @@ export default function Tos() {
         <section>
         <h2> <ins>Terms of Service </ins></h2>
           <hr color="#8b4053"></hr>
-          <p> <b><ins>I will not draw</ins></b>
-        <br></br>
-         ❥ Mechanoid creatures
-        <br></br>
-         ❥ Children in sexual context (this includes cubs, kids, loli and shota)
-        <br></br>
-         ❥ Vore, Scat, Vomit, Watersports - Make sure to ask if you want heavy kinks.
-        <br></br>
-         ❥ Heavy Gore
-        <br></br>
-         ❥ Hyper muscles / Micro / Macro anything.
-        <br></br><br></br>
+          <p>
           <b><ins>Payment and Refunds</ins></b>
         <br></br>
          ❥ I take Paypal Only
@@ -58,6 +54,28 @@ export default function Tos() {
          ❥ Comissioner are not allowed to use artwork for commercial use or promotion/profit.
         <br></br>
          ❥ Comissioner does not have right to sell any comissioned art for NFT.</p>
+
+
+        <button onClick={handleMoreClick}>
+          View NSFW-Comission Terms (Agree to being 18+)
+        </button>
+
+      {visible && (
+      <box>
+          <br></br>
+          <b><ins>I Will Not Draw</ins></b>
+          <br></br>
+          ❥ Mechanoid creatures
+          <br></br>
+          ❥ Children in sexual context (this includes cubs, kids, loli & shota)
+          <br></br>
+          ❥ Vore, Scat, Vomit, Watersports - Make sure to ask if you want heavy kinks.
+          <br></br>
+          ❥ Heavy Gore
+          <br></br>
+          ❥ Hyper muscles / Micro / Macro anything.
+      </box>
+      )}
         </section>
      </Page>
     )
