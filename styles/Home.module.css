@@ -59,3 +59,18 @@
   z-index: -1;
   background-image: url("../public/images/lowpoly.png");
 }
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.galleryImage {
+  position: relative;
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
