@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Image from 'next/future/image';
 import Page from '../../components/Page';
 import { getAllGalleryFilenames } from '../../lib/images';
+import Modal from 'react-modal'
+import React, { useState } from 'react';
 import styles from '../../styles/Home.module.css'
 
 export async function getStaticProps({ params }) {
@@ -15,14 +17,25 @@ export async function getStaticProps({ params }) {
 
 const css = { objectFit: 'contain'};
 
-export default function Gallery({ images }) {
+export default function Gallery({images}) {
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  function openModal() {
+    setIsOpen(true);
+  }
+  function closeModal() {
+    setIsOpen(false);
+  }
+
   const imageDisplay = images.map((images) => (
     <span key={images.params.file} className={styles.galleryImage}>
+      <a onClick={openModal}>
       <Image
         fill
         style={css}
         src={`/gallery/${images.params.file}`}
         alt="Artwork" />
+        </a>
     </span>
   ))
 
@@ -35,7 +48,19 @@ export default function Gallery({ images }) {
           <h1> This is the gallery </h1>
           <p>Test text and stuff</p>
           <div className={styles.gallery}>
+          {imageDisplay}
+          <Modal
+            className={styles.modal}
+            overlayClassName={styles.overlay}
+            ariaHideApp={false}
+            isOpen={modalIsOpen}
+            closeTimeoutMS={100}
+            onRequestClose={closeModal}>
+
+          <button onClick={closeModal} className={styles.button}>X</button>
             {imageDisplay}
+
+            </Modal>
           </div>
         </section>
     </Page>

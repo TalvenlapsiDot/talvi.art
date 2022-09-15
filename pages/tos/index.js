@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Page from '../../components/Page';
 import { useState } from 'react';
+import styles from '../../styles/Home.module.css'
 
 export default function Tos() {
   const [visible, setVisible] = useState(false);
@@ -17,7 +18,7 @@ export default function Tos() {
 
         <section>
         <h2> <ins>Terms of Service </ins></h2>
-          <hr color="#8b4053"></hr>
+          <hr color="#743141"></hr>
           <p>
           <b><ins>Payment and Refunds</ins></b>
         <br></br>
@@ -31,7 +32,7 @@ export default function Tos() {
         <br></br>
          ❥ Refunds are not eligible in any point. Since the art is shown to the customer prior to paying, they are not eligible to receive a refund for whatever reason.
         <br></br><br></br>
-          <hr color="#8b4053"></hr>
+          <hr color="#743141"></hr>
           <b><ins>Reference, Edits and WIPs</ins></b>
         <br></br>
          ❥ Customer is responsible for providing good references of their character - preferably with some reference images. Please make sure your references are clear and include everything you want!
@@ -42,7 +43,7 @@ export default function Tos() {
         <br></br>
          ❥ If you need major edits at the very end of the image, that requires reworking more than half of the image, an additional payment can be requested. Customer can refuse this payment with understanding that they will not get the edits made.
         <br></br><br></br>
-          <hr color="#8b4053"></hr>
+          <hr color="#743141"></hr>
           <b><ins>Art and Artistic Rights</ins></b>
         <br></br>
          ❥ I reserve all artistic rights to comissioned work.
@@ -54,9 +55,9 @@ export default function Tos() {
          ❥ Comissioner are not allowed to use artwork for commercial use or promotion/profit.
         <br></br>
          ❥ Comissioner does not have right to sell any comissioned art for NFT.</p>
+         <hr color="#743141"></hr>
 
-
-        <button onClick={handleMoreClick}>
+        <button onClick={handleMoreClick} className={styles.buttonTos}>
           View NSFW-Comission Terms (Agree to being 18+)
         </button>
 

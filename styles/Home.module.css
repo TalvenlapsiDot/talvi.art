@@ -70,7 +70,45 @@
 .galleryImage {
   position: relative;
   display: block;
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
+  margin: auto;
+}
+
+.modal {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  background-color: #0f0f0fbb;
+  border-radius: 30px;
+  z-index: 11;
+}
+
+.overlay {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.137);
+  z-index: 11;
+}
+
+.button {
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 40%;
+}
+
+.buttonTos {
+  border-radius: 10px;
+  background-color: #52202dcc;
+  border-color: #561a2986;
+  border-width: 2px;
+  border-style: double;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
