@@ -18,43 +18,34 @@ export default function Tos() {
 
         <section>
         <h2> <ins>Terms of Service </ins></h2>
+        <p> By ordering any art from me, you agree to the following terms of service.</p>
           <hr color="#743141"></hr>
           <p>
-          <b><ins>Payment and Refunds</ins></b>
+          <ul className={styles.ulTos}> <b><ins>Payment and Refunds</ins></b>
+            <li> ❥ I take Paypal Only</li>
+            <li> ❥ USD only.</li>
+            <li> ❥ I take payment after I&apos;m finished, before I send the final files to the customer.</li>
+            <li> ❥ I use paypal invoices to send to the customer. After the invoice is paid, I will send the full size and quality images to the customer. You do not need Paypal account to pay the invoice!</li>
+            <li> ❥ Refunds are not eligible in any point. Since the art is shown to the customer prior to paying, they are not eligible to receive a refund for whatever reason.</li>
+        </ul>
         <br></br>
-         ❥ I take Paypal Only
-        <br></br>
-         ❥ USD or Euro only.
-        <br></br>
-         ❥ I take payment after I&apos;m finished, before I send the final files to the customer.
-        <br></br>
-         ❥ I use paypal invoices to send to the customer. After the invoice is paid, I will send the full size and quality images to the customer. You do not need Paypal account to pay the invoice!
-        <br></br>
-         ❥ Refunds are not eligible in any point. Since the art is shown to the customer prior to paying, they are not eligible to receive a refund for whatever reason.
-        <br></br><br></br>
           <hr color="#743141"></hr>
-          <b><ins>Reference, Edits and WIPs</ins></b>
+          <ul className={styles.ulTos}> <b><ins>Reference, Edits and WIPs</ins></b>
+            <li> ❥ Customer is responsible for providing good references of their character - preferably with some reference images. Please make sure your references are clear and include everything you want!</li>
+            <li> ❥ Completed comissions cannot be edited by another artist, with the exclusion of the comissioner themselves.</li>
+            <li> ❥ WIP&apos;s will be provided during the working phase; Usually at sketching, then after placing colors, and at the end before sending in the invoice and placing final edits.</li>
+            <li> ❥ If you need major edits at the very end of the image, that requires reworking more than half of the image, an additional payment can be requested. Customer can refuse this payment with understanding that they will not get the edits made.</li>
+        </ul>
         <br></br>
-         ❥ Customer is responsible for providing good references of their character - preferably with some reference images. Please make sure your references are clear and include everything you want!
-        <br></br>
-         ❥ Completed comissions cannot be edited by another artist, with the exclusion of the comissioner themselves.
-        <br></br>
-         ❥ WIP&apos;s will be provided during the working phase; Usually at sketching, then after placing colors, and at the end before sending in the invoice and placing final edits.
-        <br></br>
-         ❥ If you need major edits at the very end of the image, that requires reworking more than half of the image, an additional payment can be requested. Customer can refuse this payment with understanding that they will not get the edits made.
-        <br></br><br></br>
           <hr color="#743141"></hr>
-          <b><ins>Art and Artistic Rights</ins></b>
-        <br></br>
-         ❥ I reserve all artistic rights to comissioned work.
-        <br></br>
-         ❥ I have right to use the comissioned artwork in any online gallery or portfolios, as well as any publication I may do in future, with the character credits linking it back to the comissioner.
-        <br></br>
-         ❥ The comissioner has rights to use the comissioned art for any personal display as long as credits are linked back to the artist. The art may be printed for personal use only.
-        <br></br>
-         ❥ Comissioner are not allowed to use artwork for commercial use or promotion/profit.
-        <br></br>
-         ❥ Comissioner does not have right to sell any comissioned art for NFT.</p>
+          <ul className={styles.ulTos}> <b><ins>Art and Artistic Rights</ins></b>
+            <li> ❥ I reserve all artistic rights to comissioned work. </li>
+            <li> ❥ I have right to use the comissioned artwork in any online gallery or portfolios, as well as any publication I may do in future, with the character credits linking it back to the comissioner.</li>
+            <li> ❥ The comissioner has rights to use the comissioned art for any personal display as long as credits are linked back to the artist. The art may be printed for personal use only.</li>
+            <li> ❥ Comissioner are not allowed to use artwork for commercial use or promotion/profit.</li>
+            <li> ❥ Comissioner does not have right to sell any comissioned art for NFT.</li>
+        </ul>
+        </p>
          <hr color="#743141"></hr>
 
         <button onClick={handleMoreClick} className={styles.buttonTos}>
@@ -64,17 +55,18 @@ export default function Tos() {
       {visible && (
       <box>
           <br></br>
-          <b><ins>I Will Not Draw</ins></b>
-          <br></br>
-          ❥ Mechanoid creatures
-          <br></br>
-          ❥ Children in sexual context (this includes cubs, kids, loli & shota)
-          <br></br>
-          ❥ Vore, Scat, Vomit, Watersports - Make sure to ask if you want heavy kinks.
-          <br></br>
-          ❥ Heavy Gore
-          <br></br>
-          ❥ Hyper muscles / Micro / Macro anything.
+          <ul className={styles.ulTos}> <b><ins>I Will Not Draw</ins></b>
+            <li> ❥ Mechanoid creatures</li>
+            <li> ❥ Children in sexual context (this includes cubs, kids, loli & shota)</li>
+            <li> ❥ Vore, Scat, Vomit, Watersports - Make sure to ask if you want heavy kinks.</li>
+            <li> ❥ Heavy Gore</li>
+            <li> ❥ Hyper muscles / Micro / Macro anything.</li>
+        </ul>
+        <br></br>
+        <ul className={styles.ulTos}>
+          <li>All art ordered that contains any NSFW aspects, be it violence or nudity, will only be offered for people who are above the age of 18.</li>
+          <li>When ordering any NSFW art, you agree to being above the age of 18, and having read the terms of services.</li>
+        </ul>
       </box>
       )}
         </section>

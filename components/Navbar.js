@@ -10,6 +10,7 @@ export default function Navbar() {
                 <Link href='../prices'><a>Prices</a></Link>
                 <Link href='../gallery'><a>Gallery</a></Link>
                 <Link href='../tos'><a>T.O.S</a></Link>
+                <Link href='../artist'><a>About Me</a></Link>
         </nav>
     )
 }

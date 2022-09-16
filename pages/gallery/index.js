@@ -15,21 +15,24 @@ export async function getStaticProps({ params }) {
   };
 }
 
-const css = { objectFit: 'contain'};
+const css = { objectFit: 'contain', borderRadius: '10%'};
 
 export default function Gallery({images}) {
   const [modalIsOpen, setIsOpen] = useState(false);
 
-  function openModal() {
+  function openModal(image) {
+    setImageURL(image);
     setIsOpen(true);
   }
   function closeModal() {
     setIsOpen(false);
   }
 
+  const [imageURL, setImageURL] = useState('')
+
   const imageDisplay = images.map((images) => (
     <span key={images.params.file} className={styles.galleryImage}>
-      <a onClick={openModal}>
+      <a onClick={() => openModal(images.params.file)}>
       <Image
         fill
         style={css}
@@ -45,8 +48,9 @@ export default function Gallery({images}) {
             <title> Gallery</title>
         </Head>
         <section>
-          <h1> This is the gallery </h1>
-          <p>Test text and stuff</p>
+        <h2> <ins>Gallery</ins></h2>
+          <p>The gallery offers a general overview of my most favourite art pieces I have done to date.</p>
+          <p>The art also includes some NSFW pieces, although only the more tasteful ones. (Only tasteful nudity at worst.)</p>
           <div className={styles.gallery}>
           {imageDisplay}
           <Modal
@@ -58,7 +62,11 @@ export default function Gallery({images}) {
             onRequestClose={closeModal}>
 
           <button onClick={closeModal} className={styles.button}>X</button>
-            {imageDisplay}
+          <Image
+            fill
+            style={css}
+            src={`/gallery/${imageURL}`}
+            alt="Artwork" />
 
             </Modal>
           </div>

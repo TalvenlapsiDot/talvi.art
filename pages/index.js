@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
         <section>
-        <h2> Welcome to almost non-empty page! </h2>
+        <h2> Welcome to almost soon-completed page! </h2>
           <p>25-something Finnish Artist sometimes trying her best and sometimes getting art done. At best times, even almost decent art!
             <br></br>
           Page contains both NSFW and SFW examples.
@@ -22,7 +22,7 @@ export default function Home() {
           <p className={styles.ul}>
           <b><ins>★ Comission Status: ★</ins></b>
           <br></br>
-          Status here. Could make it fancy with some button or smth
+          Status here. Make it fancier somehow.
           </p>
           <br></br>
         <ul className={styles.ul}> <b><ins>★ Working on: ★</ins></b>

@@ -35,6 +35,14 @@
   text-align: center;
 }
 
+.ulTos {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+  text-align: left;
+}
+
+
 .effect1 {
   overflow: hidden;
 }
@@ -70,8 +78,8 @@
 .galleryImage {
   position: relative;
   display: block;
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   margin: auto;
 }
@@ -98,8 +106,8 @@
 }
 
 .button {
-  margin-top: 10px;
-  margin-left: 10px;
+  margin-top: -15px;
+  margin-left: -15px;
   border-radius: 40%;
 }
 
@@ -111,4 +119,11 @@
   border-style: double;
   margin-bottom: 20px;
   margin-top: 10px;
+}
+
+.price {
+  align-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
