@@ -22,7 +22,7 @@ export default function Prices() {
           <br></br>
         <section>
           <div className={styles.price}>
-            <Image src="/images/illustration.jpg" width={300} height={300} style={css} alt="Illustration Example"/>
+            <Image src="/images/Illustration.jpg" width={300} height={300} style={css} alt="Illustration Example"/>
             <ul className={styles.ul}> <b><ins>Full Colored Illustration</ins></b>
               <li> Portrait: 55$ </li>
               <li> Half-Body: 60$ </li>
@@ -43,7 +43,7 @@ export default function Prices() {
           <br></br>
         <section>
         <div className={styles.price}>
-            <Image src="/images/flatcolor.jpg" width={300} height={300} style={css} alt="Flat Color Example"/>
+            <Image src="/images/FlatColor.jpg" width={300} height={300} style={css} alt="Flat Color Example"/>
             <ul className={styles.ul}> <b><ins>Flat Colors</ins></b>
               <li> Portrait: 40$ </li>
               <li> Half-Body: 45$ </li>
