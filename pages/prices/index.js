@@ -70,7 +70,7 @@ export default function Prices() {
 
         <section>
         <div className={styles.price}>
-          <Image src="/gallery/2.png" width={150} height={150} alt="Emote Example"/>
+          <Image src="/images/Emote.png" width={150} height={150} alt="Emote Example"/>
           <ul className={styles.ul}> <b><ins>Emotes</ins></b>
           <li>❥ Single Emote: 10$</li>
           <li>❥ Pack of Five(5): 45$ </li>
