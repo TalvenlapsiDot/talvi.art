@@ -1,6 +1,8 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import Page from '../components/Page'
+import { SocialIcon } from 'react-social-icons';
+
+import styles from '../styles/Home.module.css'
 
 export default function Home() {
     return (
@@ -17,18 +19,16 @@ export default function Home() {
             <br></br>
           Page contains both NSFW and SFW examples.
             <br></br><br></br>
-          Contacts through discord at <strong>Talvi#4702</strong> or to e-mail found at the bottom of the page.</p>
+          Contact me at:
+          <br/><SocialIcon style={{ height: 30, width: 30 }} fgColor="#FFFFFF" bgColor='#a85c6d' network='discord'/><strong> ❥ Talvi#4702</strong>
+          <br/><SocialIcon style={{ height: 30, width: 30 }} fgColor="#FFFFFF" bgColor='#a85c6d' network='email' url="mailto:talvikart@gmail.com" /> ❥ talvikart@gmail</p>
           <br></br>
-          <p className={styles.ul}>
-          <b><ins>★ Comission Status: ★</ins></b>
-          <br></br>
-          Status here. Make it fancier somehow.
-          </p>
-          <br></br>
-        <ul className={styles.ul}> <b><ins>★ Working on: ★</ins></b>
+          <p className={styles.ul} > <h3><b>★ Comission Status: <ins>Open</ins> ★</b></h3> </p>
+        <ul className={styles.ul}> <b>★ Working on: ★</b>
         <li> Kinda want these lists into fancier form too..</li>
         </ul>
-        <ul className={styles.ul}> <b><ins>★ Waiting List: ★</ins></b>
+        <br />
+        <ul className={styles.ul}> <b>★ Waiting List: ★</b>
         <li> Especially the waiting list one</li>
         <li> Name</li>
         <li> Name</li>

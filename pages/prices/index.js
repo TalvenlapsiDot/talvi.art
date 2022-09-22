@@ -13,22 +13,26 @@ export default function Prices() {
         </Head>
 
         <section>
-        <h2> <ins> Pricelist</ins></h2>
-          <p>All Prices are marked in USD. When the time for payment comes, I will send you a Paypal invoice; You do NOT need Paypal to pay it. </p>
-          <p>Prices are equal for NSFW and SFW art alike.</p>
-          <p>In case of very complex characters or accessories, i.e. weapons, there can be complexity add-on. This will be talked with customer prior.</p>
+        <h2 align="center"> Pricelist</h2>
+          <p>All Prices are marked in USD. When the time for payment comes, I will send you a Paypal invoice; You do NOT need Paypal to pay it.
+          <br/>
+          Prices are equal for NSFW and SFW art alike.
+          <br/><br/>
+          In case of very complex characters or accessories, i.e. weapons, there can be complexity add-on. This will be talked with customer prior.</p>
         </section>
-          <hr color="#743141"></hr>
-          <br></br>
+        <hr className={styles.rounded}></hr>
+        <br/>
+
         <section>
           <div className={styles.price}>
             <Image src="/images/Illustration.jpg" width={300} height={300} style={css} alt="Illustration Example"/>
             <ul className={styles.ul}> <b><ins>Full Colored Illustration</ins></b>
-              <li> Portrait: 55$ </li>
-              <li> Half-Body: 60$ </li>
-              <li> Full-Body: 70$ </li>
-              <li> Average time to complete: 2-4 weeks </li>
+              <li> ❥ Portrait: 55$ </li>
+              <li> ❥ Half-Body: 60$ </li>
+              <li> ❥ Full-Body: 70$ </li>
+              <li> ❥ Average time to complete: 2-4 weeks </li>
             </ul>
+            <br/>
             <ul className={styles.ulTos}>
               <li> Full Colored pictures are best I can offer - a fully, cleanly rendered pictures with full highlights and shadows, and any other possible effects
               (such as glitter, magic, etc). Price includes simple or single colored background.</li>
@@ -39,17 +43,19 @@ export default function Prices() {
             </ul>
           </div>
         </section>
-          <hr color="#743141"></hr>
-          <br></br>
+        <hr className={styles.rounded}></hr>
+        <br/>
+
         <section>
         <div className={styles.price}>
             <Image src="/images/FlatColor.jpg" width={300} height={300} style={css} alt="Flat Color Example"/>
             <ul className={styles.ul}> <b><ins>Flat Colors</ins></b>
-              <li> Portrait: 40$ </li>
-              <li> Half-Body: 45$ </li>
-              <li> Full-Body: 55$ </li>
-              <li> Average time to complete: 1-2 weeks </li>
+              <li> ❥Portrait: 40$ </li>
+              <li> ❥Half-Body: 45$ </li>
+              <li> ❥Full-Body: 55$ </li>
+              <li> ❥Average time to complete: 1-2 weeks </li>
             </ul>
+            <br/>
             <ul className={styles.ulTos}>
               <li>Flat colors with clean lineart, often with little highlights/minor shading.</li>
               <li>Price includes a single-colored or simple background.</li>
@@ -59,16 +65,21 @@ export default function Prices() {
             </ul>
           </div>
         </section>
-          <hr color="#743141"></hr>
+        <hr className={styles.rounded}></hr>
           <br></br>
+
         <section>
         <div className={styles.price}>
           <Image src="/gallery/2.png" width={150} height={150} alt="Emote Example"/>
           <ul className={styles.ul}> <b><ins>Emotes</ins></b>
-          <li>Emotes for Discord, Twitch or Wherever you may need them at.</li>
-          <li>Single emote is 10$, and pack of five can be bought at 45$.</li>
-          <li>Average time to complete: 1 day, or 3-5 days for a pack.</li>
+          <li>❥ Single Emote: 10$</li>
+          <li>❥ Pack of Five(5): 45$ </li>
+          <li>❥ Average time to complete: 1 day, or 3-5 days for a pack.</li>
           </ul>
+          <br/>
+          <ul className={styles.ulTos}>
+              <li>Emotes fit for Discord, Twitch etc. Also usable as icons or just chibi-like art.</li>
+            </ul>
           </div>
         </section>
     </Page>

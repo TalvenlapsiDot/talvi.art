@@ -4,7 +4,11 @@ import Page from '../../components/Page';
 import { getAllGalleryFilenames } from '../../lib/images';
 import Modal from 'react-modal'
 import React, { useState } from 'react';
+
 import styles from '../../styles/Home.module.css'
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 export async function getStaticProps({ params }) {
   const images = getAllGalleryFilenames();
@@ -15,7 +19,9 @@ export async function getStaticProps({ params }) {
   };
 }
 
-const css = { objectFit: 'contain', borderRadius: '10%'};
+const css = { objectFit: 'cover', borderRadius: '10%'};
+const openpic = { objectFit: 'contain', borderRadius: '10%'};
+
 
 export default function Gallery({images}) {
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -48,9 +54,11 @@ export default function Gallery({images}) {
             <title> Gallery</title>
         </Head>
         <section>
-        <h2> <ins>Gallery</ins></h2>
-          <p>The gallery offers a general overview of my most favourite art pieces I have done to date.</p>
-          <p>The art also includes some NSFW pieces, although only the more tasteful ones. (Only tasteful nudity at worst.)</p>
+        <h2 align="center">Gallery</h2>
+          <p>The gallery offers a general overview of my most favourite art pieces I have done to date.
+          <br/>
+          Gallery images may include tasteful/artistic nudity for demonstration purposes, but real explicit pictures are not listed.</p>
+          <br/><br/>
           <div className={styles.gallery}>
           {imageDisplay}
           <Modal
@@ -64,10 +72,9 @@ export default function Gallery({images}) {
           <button onClick={closeModal} className={styles.button}>X</button>
           <Image
             fill
-            style={css}
+            style={openpic}
             src={`/gallery/${imageURL}`}
             alt="Artwork" />
-
             </Modal>
           </div>
         </section>

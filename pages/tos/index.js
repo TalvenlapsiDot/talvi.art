@@ -17,9 +17,9 @@ export default function Tos() {
         </Head>
 
         <section>
-        <h2> <ins>Terms of Service </ins></h2>
+        <h2 align="center">Terms of Service</h2>
         <p> By ordering any art from me, you agree to the following terms of service.</p>
-          <hr color="#743141"></hr>
+          <hr className={styles.rounded}></hr>
           <p>
           <ul className={styles.ulTos}> <b><ins>Payment and Refunds</ins></b>
             <li> ❥ I take Paypal Only</li>
@@ -29,7 +29,8 @@ export default function Tos() {
             <li> ❥ Refunds are not eligible in any point. Since the art is shown to the customer prior to paying, they are not eligible to receive a refund for whatever reason.</li>
         </ul>
         <br></br>
-          <hr color="#743141"></hr>
+        <hr className={styles.rounded}></hr>
+
           <ul className={styles.ulTos}> <b><ins>Reference, Edits and WIPs</ins></b>
             <li> ❥ Customer is responsible for providing good references of their character - preferably with some reference images. Please make sure your references are clear and include everything you want!</li>
             <li> ❥ Completed comissions cannot be edited by another artist, with the exclusion of the comissioner themselves.</li>
@@ -37,7 +38,8 @@ export default function Tos() {
             <li> ❥ If you need major edits at the very end of the image, that requires reworking more than half of the image, an additional payment can be requested. Customer can refuse this payment with understanding that they will not get the edits made.</li>
         </ul>
         <br></br>
-          <hr color="#743141"></hr>
+        <hr className={styles.rounded}></hr>
+
           <ul className={styles.ulTos}> <b><ins>Art and Artistic Rights</ins></b>
             <li> ❥ I reserve all artistic rights to comissioned work. </li>
             <li> ❥ I have right to use the comissioned artwork in any online gallery or portfolios, as well as any publication I may do in future, with the character credits linking it back to the comissioner.</li>
@@ -46,15 +48,20 @@ export default function Tos() {
             <li> ❥ Comissioner does not have right to sell any comissioned art for NFT.</li>
         </ul>
         </p>
-         <hr color="#743141"></hr>
+        <hr className={styles.rounded}></hr>
 
+        <ul className={styles.ulTos}> <b><ins>18+ Comissions</ins></b>
+        <li>❥ NSFW (Not-safe-for-work) terms are available to those above the age of 18. Click the button to agree to these terms, and view the 18+ comission rules.</li>
+        <li></li>
+        </ul>
+        <br/>
         <button onClick={handleMoreClick} className={styles.buttonTos}>
-          View NSFW-Comission Terms (Agree to being 18+)
+          I am 18 years or older.
         </button>
 
       {visible && (
       <box>
-          <br></br>
+          <br/><br/>
           <ul className={styles.ulTos}> <b><ins>I Will Not Draw</ins></b>
             <li> ❥ Mechanoid creatures</li>
             <li> ❥ Children in sexual context (this includes cubs, kids, loli & shota)</li>
