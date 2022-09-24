@@ -4,11 +4,12 @@ import Page from '../../components/Page';
 import { getAllGalleryFilenames } from '../../lib/images';
 import Modal from 'react-modal'
 import React, { useState } from 'react';
+import { Swiper, SwiperSlide} from 'swiper/react';
+import { Navigation, EffectFade} from 'swiper';
 
 import styles from '../../styles/Home.module.css'
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 export async function getStaticProps({ params }) {
   const images = getAllGalleryFilenames();
@@ -61,6 +62,7 @@ export default function Gallery({images}) {
           <br/><br/>
           <div className={styles.gallery}>
           {imageDisplay}
+
           <Modal
             className={styles.modal}
             overlayClassName={styles.overlay}
@@ -70,12 +72,24 @@ export default function Gallery({images}) {
             onRequestClose={closeModal}>
 
           <button onClick={closeModal} className={styles.button}>X</button>
+            <Swiper
+              modules={[Navigation, EffectFade]}
+              effect="fade"
+              spaceBetween={50}
+              slidesPerView={3}
+              navigation
+              pagination={{ clickable: true }}
+              scrollbar={{ draggable: true }}
+            >
+              <SwiperSlide>
           <Image
             fill
             style={openpic}
             src={`/gallery/${imageURL}`}
             alt="Artwork" />
-            </Modal>
+              </SwiperSlide>
+            </Swiper>
+          </Modal>
           </div>
         </section>
     </Page>
