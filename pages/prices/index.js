@@ -50,10 +50,11 @@ export default function Prices() {
         <div className={styles.price}>
             <Image src="/images/FlatColor.jpg" width={300} height={300} style={css} alt="Flat Color Example"/>
             <ul className={styles.ul}> <b><ins>Flat Colors</ins></b>
-              <li> ❥Portrait: 40$ </li>
-              <li> ❥Half-Body: 45$ </li>
-              <li> ❥Full-Body: 55$ </li>
-              <li> ❥Average time to complete: 1-2 weeks </li>
+              <li> ❥ Portrait: 40$ </li>
+              <li> ❥ Half-Body: 45$ </li>
+              <li> ❥ Full-Body: 55$ </li>
+              <li> ❥ Detailed Backgrounds are +20$.</li>
+              <li> ❥ Average time to complete: 1-2 weeks </li>
             </ul>
             <br/>
             <ul className={styles.ulTos}>

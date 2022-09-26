@@ -24,6 +24,7 @@ export default function Navbar() {
                 <Hamburger />
         {!hamburgerOpen &&
             <>
+                <Hamburger />
             <nav className={styles.burgernav}>
                 <Link href='/'><a>Home</a></Link>
                 <Link href='../prices'><a>Prices</a>

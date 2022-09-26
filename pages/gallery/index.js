@@ -3,9 +3,12 @@ import Image from 'next/future/image';
 import Page from '../../components/Page';
 import { getAllGalleryFilenames } from '../../lib/images';
 import Modal from 'react-modal'
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
+import { Swiper, SwiperSlide} from 'swiper/react';
+import { Keyboard, Navigation} from 'swiper';
 
 import styles from '../../styles/Home.module.css'
+import 'swiper/css/bundle';
 
 export async function getStaticProps({ params }) {
   const images = getAllGalleryFilenames();
@@ -22,6 +25,7 @@ const openpic = { objectFit: 'contain', borderRadius: '10%'};
 
 export default function Gallery({images}) {
   const [modalIsOpen, setIsOpen] = useState(false);
+  const myRef = useRef(null);
 
   function openModal(image) {
     setImageURL(image);
@@ -45,6 +49,15 @@ export default function Gallery({images}) {
     </span>
   ))
 
+  const modalDisplay = images.map((images) => (
+    <SwiperSlide style={{ height: '80vh' }} key={images.params.file} ref={myRef}>
+      <Image
+        fill
+        style={openpic}
+        src={`/gallery/${images.params.file}`}
+        alt="Artwork" />
+    </SwiperSlide>
+  ))
     return (
       <Page>
         <Head>
@@ -67,12 +80,16 @@ export default function Gallery({images}) {
             onRequestClose={closeModal}>
 
           <button onClick={closeModal} className={styles.button}>X</button>
-          <Image
-            fill
-            style={openpic}
-            src={`/gallery/${imageURL}`}
-            alt="Artwork" />
-            </Modal>
+            <Swiper
+              modules={[Navigation, Keyboard]}
+              grabCursor={true}
+              navigation={true}
+              loop={true}
+              keyboard={{enabled: true}}
+            >
+            {modalDisplay}
+            </Swiper>
+          </Modal>
           </div>
         </section>
     </Page>

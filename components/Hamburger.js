@@ -6,8 +6,6 @@ export default function Hamburger() {
         <>
         <div className={styles.hamburger}>
             <div className={styles.burger}/>
-            <div className={styles.burger}/>
-            <div className={styles.burger}/>
         </div>
 
         </>
