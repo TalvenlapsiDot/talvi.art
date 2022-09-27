@@ -30,13 +30,13 @@ export default function Prices() {
               <li> ❥ Portrait: 55$ </li>
               <li> ❥ Half-Body: 60$ </li>
               <li> ❥ Full-Body: 70$ </li>
+              <li> ❥ Detailed backgrounds are +40$.</li>
               <li> ❥ Average time to complete: 2-4 weeks </li>
             </ul>
             <br/>
             <ul className={styles.ulTos}>
               <li> Full Colored pictures are best I can offer - a fully, cleanly rendered pictures with full highlights and shadows, and any other possible effects
               (such as glitter, magic, etc). Price includes simple or single colored background.</li>
-              <li>Detailed backgrounds are +40$.</li>
               <li>Nude and/or Alt versions for clothes are extra 50% of the price of the original picture.</li>
               <li>Price includes simple or single colored background.</li>
               <li>Second character is double the original character price. (Discounting possible complexity fee&apos;s and background fees)</li>
