@@ -1,11 +1,13 @@
 import Head from 'next/head';
 import Image from 'next/future/image';
-import Page from '../../components/Page';
-import { getAllGalleryFilenames } from '../../lib/images';
 import Modal from 'react-modal'
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide} from 'swiper/react';
 import { Keyboard, Navigation} from 'swiper';
+
+import Page from '../../components/Page';
+
+import { getAllGalleryFilenames } from '../../lib/images';
 
 import styles from '../../styles/Home.module.css'
 import 'swiper/css/bundle';
@@ -25,21 +27,27 @@ const openpic = { objectFit: 'contain', borderRadius: '10%'};
 
 export default function Gallery({images}) {
   const [modalIsOpen, setIsOpen] = useState(false);
-  const myRef = useRef(null);
+  const [swiper, setSwiper] = useState(null);
+  const [slide, setSlide] = useState(0);
 
-  function openModal(image) {
-    setImageURL(image);
+  function openModal(index) {
+    setSlide(index);
     setIsOpen(true);
   }
+
   function closeModal() {
     setIsOpen(false);
   }
 
-  const [imageURL, setImageURL] = useState('')
+  useEffect(() => {
+    if(swiper?.slideTo) {
+      swiper?.slideTo(slide, 0);
+    }
+  }, [swiper, slide]);
 
-  const imageDisplay = images.map((images) => (
+  const imageDisplay = images.map((images, index) => (
     <span key={images.params.file} className={styles.galleryImage}>
-      <a onClick={() => openModal(images.params.file)}>
+      <a onClick={() => openModal(index + 1)}>
       <Image
         fill
         style={css}
@@ -49,15 +57,30 @@ export default function Gallery({images}) {
     </span>
   ))
 
-  const modalDisplay = images.map((images) => (
-    <SwiperSlide style={{ height: '80vh' }} key={images.params.file} ref={myRef}>
-      <Image
-        fill
-        style={openpic}
-        src={`/gallery/${images.params.file}`}
-        alt="Artwork" />
-    </SwiperSlide>
-  ))
+  const swiperOutput = (
+    <Swiper
+      modules={[Navigation, Keyboard]}
+      grabCursor={true}
+      navigation={true}
+      loop={true}
+      keyboard={{enabled: true}}
+      onSwiper={(instance) => {
+        setSwiper(instance);
+      }}
+    >
+      {images.map((images) => (
+        <SwiperSlide style={{ height: '80vh' }} key={images.params.file}>
+          <Image
+            fill
+            style={openpic}
+            src={`/gallery/${images.params.file}`}
+            alt="Artwork"
+          />
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  )
+
     return (
       <Page>
         <Head>
@@ -80,15 +103,7 @@ export default function Gallery({images}) {
             onRequestClose={closeModal}>
 
           <button onClick={closeModal} className={styles.button}>X</button>
-            <Swiper
-              modules={[Navigation, Keyboard]}
-              grabCursor={true}
-              navigation={true}
-              loop={true}
-              keyboard={{enabled: true}}
-            >
-            {modalDisplay}
-            </Swiper>
+          {swiperOutput}
           </Modal>
           </div>
         </section>
